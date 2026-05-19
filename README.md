@@ -11,7 +11,6 @@ One-page Mario-themed landing site wired to your **Solana** wallet.
 ## Run locally
 
 ```bash
-cd mariobot
 python3 -m http.server 8080
 ```
 
@@ -20,6 +19,8 @@ Open http://localhost:8080 (ES modules require a local server, not `file://`).
 ## Deploy
 
 Static hosting works anywhere (Vercel, Netlify, GitHub Pages). Upload the folder contents; no build step required.
+
+On Vercel: leave **Root Directory** empty, and use **Framework Preset: Other** (or rely on `vercel.json` in the repo). Do not use Vite/Next — there is no build step.
 
 ## Customize
 
