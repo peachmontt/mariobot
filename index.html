@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MarioBot</title>
+  <meta name="description" content="MarioBot — your Solana-powered command center on the blockchain." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="sky" aria-hidden="true">
+    <div class="cloud c1"></div>
+    <div class="cloud c2"></div>
+    <div class="cloud c3"></div>
+  </div>
+
+  <header class="top-bar">
+    <a href="https://x.com" class="icon-btn" target="_blank" rel="noopener noreferrer" aria-label="MarioBot on X">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+      </svg>
+    </a>
+    <button type="button" class="icon-btn" id="info-btn" aria-label="About MarioBot">
+      <span>i</span>
+    </button>
+  </header>
+
+  <main class="scene">
+    <div class="office-bg" aria-hidden="true">
+      <div class="window">
+        <div class="castle"></div>
+      </div>
+      <div class="poster poster-left">SOLANA DATA HUB</div>
+      <div class="poster poster-center">
+        <h3>MARIOBOT HQ</h3>
+        <div class="mini-chart"></div>
+        <p>Powered by Solana</p>
+      </div>
+      <div class="desk">
+        <div class="monitor m-left">
+          <pre id="terminal-stats">mariobot wallet
+Status: disconnected
+SOL: —
+Tokens: —</pre>
+        </div>
+        <div class="monitor m-right">
+          <div class="chart-label">TPS OVER TIME</div>
+          <div class="fake-chart"></div>
+        </div>
+      </div>
+      <div class="pipe"></div>
+      <div class="block">?</div>
+    </div>
+
+    <section class="hero">
+      <h1 class="title" aria-label="MarioBot">MarioBot</h1>
+
+      <div class="bot-stage">
+        <div class="bot-shadow"></div>
+        <div class="mariobot dancer" role="img" aria-label="Dancing MarioBot">
+          <div class="bot-cap"></div>
+          <div class="bot-face">
+            <span class="eye left"></span>
+            <span class="eye right"></span>
+            <span class="stache"></span>
+          </div>
+          <div class="bot-body">
+            <span class="btn"></span>
+            <span class="overall"></span>
+          </div>
+          <div class="arm left"></div>
+          <div class="arm right"></div>
+          <div class="leg left"></div>
+          <div class="leg right"></div>
+        </div>
+      </div>
+
+      <div class="wallet-panel">
+        <button type="button" id="wallet-btn" class="wallet-btn">
+          Connect Solana Wallet
+        </button>
+        <p id="wallet-status" class="wallet-status">Not connected</p>
+        <div id="wallet-details" class="wallet-details hidden">
+          <p><span class="label">Address</span> <code id="wallet-address">—</code></p>
+          <p><span class="label">Balance</span> <strong id="wallet-balance">— SOL</strong></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="info-dialog" class="info-dialog">
+    <button type="button" class="dialog-close" id="dialog-close" aria-label="Close">×</button>
+    <h2>MarioBot</h2>
+    <p>
+      A one-page command center inspired by the vibe of
+      <a href="https://mertbot.fun/" target="_blank" rel="noopener">mertbot.fun</a>,
+      re-themed for the Mushroom Kingdom and wired to your Solana wallet.
+    </p>
+    <p>Connect Phantom (or any Solana wallet) to see your address and SOL balance live on the desk monitors.</p>
+  </dialog>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
