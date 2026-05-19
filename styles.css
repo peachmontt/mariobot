@@ -527,6 +527,50 @@ body {
   50% { transform: rotate(-18deg); }
 }
 
+.buy-btn {
+  display: inline-block;
+  font-family: "Press Start 2P", monospace;
+  font-size: clamp(0.7rem, 3.8vw, 0.95rem);
+  line-height: 1.5;
+  padding: 1.35rem 1.75rem;
+  margin: 0.5rem 0 1.25rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #1a0f0a;
+  background: linear-gradient(180deg, var(--mario-yellow) 0%, #f5a800 45%, #e88a00 100%);
+  box-shadow:
+    0 6px 0 #b86e00,
+    0 0 0 4px var(--mario-red),
+    0 12px 32px rgba(251, 208, 0, 0.45);
+  transition: transform 0.1s, box-shadow 0.1s;
+  width: 100%;
+  max-width: 420px;
+  animation: buy-pulse 2s ease-in-out infinite;
+}
+
+.buy-btn:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow:
+    0 9px 0 #b86e00,
+    0 0 0 4px var(--mario-red),
+    0 16px 40px rgba(251, 208, 0, 0.55);
+}
+
+.buy-btn:active {
+  transform: translateY(3px) scale(0.98);
+  box-shadow:
+    0 3px 0 #b86e00,
+    0 0 0 4px var(--mario-red),
+    0 8px 20px rgba(251, 208, 0, 0.35);
+}
+
+@keyframes buy-pulse {
+  0%, 100% { filter: brightness(1); }
+  50% { filter: brightness(1.12); }
+}
+
 .wallet-panel {
   background: rgba(0, 0, 0, 0.55);
   border: 2px solid rgba(153, 69, 255, 0.5);
