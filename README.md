@@ -1,6 +1,6 @@
 # MarioBot
 
-One-page landing site inspired by [mertbot.fun](https://mertbot.fun/), re-themed with Mario aesthetics and wired to your **Solana** wallet.
+One-page Mario-themed landing site wired to your **Solana** wallet.
 
 ## Features
 
@@ -25,5 +25,5 @@ Static hosting works anywhere (Vercel, Netlify, GitHub Pages). Upload the folder
 ## Customize
 
 - Replace the X link in `index.html` with your MarioBot account
-- Point `RPC_ENDPOINT` in `app.js` to Helius or another RPC for faster reads
+- Point `RPC_ENDPOINT` in `app.js` to your preferred Solana RPC for faster reads
 - Swap the CSS character for a PNG/GIF of your MarioBot mascot in `assets/`
