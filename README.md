@@ -8,7 +8,6 @@ One-page Mario-themed landing site wired to your **Solana** wallet.
 - **Connect Solana Wallet** — Phantom, Solflare, Backpack, and other `window.solana` wallets
 - Live **SOL balance** and address on the page and desk monitor
 - Info dialog explaining the project
-
 ## Run locally
 
 ```bash
